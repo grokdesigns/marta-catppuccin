@@ -2,144 +2,142 @@
 whiskers:
   version: 2.5.1
   matrix:
-    - variant: ["generated-themes"]
     - flavor
-  filename: "catppuccin-marta-{{flavor.identifier}}.theme"
+  filename: "themes/catppuccin-{{flavor.identifier}}.theme"
++ hex_format: "#{{R}}{{G}}{{B}}{{Z}}"
 ---
-
-{%- set palette = flavor.colors -%}
 
 name "Catppuccin - {{flavor.identifier}}"
 
 base {
     appearance "{% if flavor.identifier=='latte'%}light{% else %}dark{% endif %}"
-    background #{{ palette.base.hex | upper }}
-    separator #{{ palette.surface0.hex | upper }}
-    text #{{ palette.text.hex | upper }}
+    background #{{ base.hex | upper }}
+    separator #{{ surface0.hex | upper }}
+    text #{{ text.hex | upper }}
 }
 
 actionBar {
-    separator #{{ palette.surface1.hex | upper }} 
+    separator #{{ surface1.hex | upper }} 
 
     button {
-        background #{{ palette.base.hex | upper }}
-        hotkey #{{ palette.text.hex | upper }}
-        text #{{ palette.subtext1.hex | upper }}
+        background #{{ base.hex | upper }}
+        hotkey #{{ text.hex | upper }}
+        text #{{ subtext1.hex | upper }}
     }
 }
 
 asyncProgressBar {
-    border #{{ palette.overlay1.hex | upper }}
-    progress #{{ palette.subtext1.hex | upper }}
-    itemProgress #{{ palette.surface0.hex | upper }}
+    border #{{ overlay1.hex | upper }}
+    progress #{{ subtext1.hex | upper }}
+    itemProgress #{{ surface0.hex | upper }}
 }
 
 breadcrumbs {
-    color1 #{{ palette.mantle.hex | upper }}
-    color2 #{{ palette.surface0.hex | upper }}
-    color3 #{{ palette.surface1.hex | upper }}
-    separator #{{ palette.sapphire.hex | upper }}
-    text #{{ palette.text.hex | upper }}
+    color1 #{{ mantle.hex | upper }}
+    color2 #{{ surface0.hex | upper }}
+    color3 #{{ surface1.hex | upper }}
+    separator #{{ sapphire.hex | upper }}
+    text #{{ text.hex | upper }}
 }
 
 files {
     background {
-        alternate #{{ palette.mantle.hex | upper }}
-        current #{{ palette.surface2.hex | upper }}
-        currentSelected #{{ palette.sapphire.hex | upper }}
-        selected #{{ palette.surface1.hex | upper }}
+        alternate #{{ mantle.hex | upper }}
+        current #{{ surface2.hex | upper }}
+        currentSelected #{{ sapphire.hex | upper }}
+        selected #{{ surface1.hex | upper }}
     }
 
     dragDropSelection {
-        color #{{ palette.overlay0.hex | upper }}
+        color #{{ overlay0.hex | upper }}
         width 1
     }
 
     text {
-        current #{{ palette.text.hex | upper }}
-        currentSelected #{{ palette.peach.hex | upper }}
-        hidden #{{ palette.surface1.hex | upper }}
-        matched #{{ palette.red.hex | upper }}
-        selected #{{ palette.peach.hex | upper }}
+        current #{{ text.hex | upper }}
+        currentSelected #{{ peach.hex | upper }}
+        hidden #{{ surface1.hex | upper }}
+        matched #{{ red.hex | upper }}
+        selected #{{ peach.hex | upper }}
 
-        highlighting1 #{{ palette.teal.hex | upper }}
-        highlighting2 #{{ palette.green.hex | upper }}
-        highlighting3 #{{ palette.pink.hex | upper }}
-        highlighting4 #{{ palette.yellow.hex | upper }}
+        highlighting1 #{{ teal.hex | upper }}
+        highlighting2 #{{ green.hex | upper }}
+        highlighting3 #{{ pink.hex | upper }}
+        highlighting4 #{{ yellow.hex | upper }}
     }
 }
 
 searchBar {
     query {
-        border #{{ palette.surface1.hex | upper }}
-        placeholder #{{ palette.teal.hex | upper }}
+        border #{{ surface1.hex | upper }}
+        placeholder #{{ teal.hex | upper }}
     }
 
     results {
-        highlighting #{{ palette.text.hex | upper }}
-        selection #{{ palette.sapphire.hex | upper }}
-        subtitle #{{ palette.overlay0.hex | upper }}
+        highlighting #{{ text.hex | upper }}
+        selection #{{ sapphire.hex | upper }}
+        subtitle #{{ overlay0.hex | upper }}
     }
 
     rowSeparator {
-        color #{{ palette.surface1.hex | upper }}
+        color #{{ surface1.hex | upper }}
         show true
     }
 }
 
 statusBar {
-    background #{{ palette.surface2.hex | upper }}
-    border #{{ palette.surface1.hex | upper }}
-    text #{{ palette.text.hex | upper }}
-    quickSelectNoResultsHighlighting #{{ palette.red.hex | upper }}
+    background #{{ surface2.hex | upper }}
+    border #{{ surface1.hex | upper }}
+    text #{{ text.hex | upper }}
+    quickSelectNoResultsHighlighting #{{ red.hex | upper }}
 }
 
 tableHeader {
-    separator #{{ palette.surface1.hex | upper }}
-    text #{{ palette.text.hex | upper }}
+    separator #{{ surface1.hex | upper }}
+    text #{{ text.hex | upper }}
 
     pressed {
-        background #{{ palette.surface1.hex | upper }}
+        background #{{ surface1.hex | upper }}
     }
 }
 
 tabs {
     active {
-        text #{{ palette.text.hex | upper }}
+        text #{{ text.hex | upper }}
     }
 
     inactive {
-        background #{{ palette.mantle.hex | upper }}
-        text #{{ palette.overlay0.hex | upper }}
+        background #{{ mantle.hex | upper }}
+        text #{{ overlay0.hex | upper }}
     }
 }
 
 terminal {
     caret {
-        background #{{ palette.overlay1.hex | upper }}
-        text #{{ palette.text.hex | upper }}
+        background #{{ overlay1.hex | upper }}
+        text #{{ text.hex | upper }}
     }
 }
 
 textEditor {
-    error #{{ palette.red.hex | upper }}
-    warning #{{ palette.mauve.hex | upper }}
-    keyword #{{ palette.green.hex | upper }}
-    comment #{{ palette.overlay1.hex | upper }}
-    identifier #{{ palette.text.hex | upper }}
+    error #{{ red.hex | upper }}
+    warning #{{ mauve.hex | upper }}
+    keyword #{{ green.hex | upper }}
+    comment #{{ overlay1.hex | upper }}
+    identifier #{{ text.hex | upper }}
 
     literal {
-        string #{{ palette.green.hex | upper }}
-        number #{{ palette.blue.hex | upper }}
-        color #{{ palette.blue.hex | upper }}
+        string #{{ green.hex | upper }}
+        number #{{ blue.hex | upper }}
+        color #{{ blue.hex | upper }}
     }
 
     gutter {
-        background #{{ palette.surface2.hex | upper }}
-        text #{{ palette.subtext0.hex | upper }}
+        background #{{ surface2.hex | upper }}
+        text #{{ subtext0.hex | upper }}
     }
 }
 
 titleBar {
-    text #{{ palette.text.hex | upper }}
+    text #{{ text.hex | upper }}
 }
