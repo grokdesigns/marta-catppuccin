@@ -1,0 +1,134 @@
+name "Catppuccin - latte"
+
+base {
+    appearance "light"
+    background #EFF1F5
+    separator #CCD0DA
+    text #4C4F69
+}
+
+actionBar {
+    separator #BCC0CC 
+
+    button {
+        background #EFF1F5
+        hotkey #4C4F69
+        text #5C5F77
+    }
+}
+
+asyncProgressBar {
+    border #8C8FA1
+    progress #5C5F77
+    itemProgress #CCD0DA
+}
+
+breadcrumbs {
+    color1 #E6E9EF
+    color2 #CCD0DA
+    color3 #BCC0CC
+    separator #209FB5
+    text #4C4F69
+}
+
+files {
+    background {
+        alternate #E6E9EF
+        current #ACB0BE
+        currentSelected #209FB5
+        selected #BCC0CC
+    }
+
+    dragDropSelection {
+        color #9CA0B0
+        width 1
+    }
+
+    text {
+        current #4C4F69
+        currentSelected #FE640B
+        hidden #BCC0CC
+        matched #D20F39
+        selected #FE640B
+
+        highlighting1 #179299
+        highlighting2 #40A02B
+        highlighting3 #EA76CB
+        highlighting4 #DF8E1D
+    }
+}
+
+searchBar {
+    query {
+        border #BCC0CC
+        placeholder #179299
+    }
+
+    results {
+        highlighting #4C4F69
+        selection #209FB5
+        subtitle #9CA0B0
+    }
+
+    rowSeparator {
+        color #BCC0CC
+        show true
+    }
+}
+
+statusBar {
+    background #ACB0BE
+    border #BCC0CC
+    text #4C4F69
+    quickSelectNoResultsHighlighting #D20F39
+}
+
+tableHeader {
+    separator #BCC0CC
+    text #4C4F69
+
+    pressed {
+        background #BCC0CC
+    }
+}
+
+tabs {
+    active {
+        text #4C4F69
+    }
+
+    inactive {
+        background #E6E9EF
+        text #9CA0B0
+    }
+}
+
+terminal {
+    caret {
+        background #8C8FA1
+        text #4C4F69
+    }
+}
+
+textEditor {
+    error #D20F39
+    warning #8839EF
+    keyword #40A02B
+    comment #8C8FA1
+    identifier #4C4F69
+
+    literal {
+        string #40A02B
+        number #1E66F5
+        color #1E66F5
+    }
+
+    gutter {
+        background #ACB0BE
+        text #6C6F85
+    }
+}
+
+titleBar {
+    text #4C4F69
+}

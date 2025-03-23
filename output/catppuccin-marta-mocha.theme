@@ -1,0 +1,134 @@
+name "Catppuccin - mocha"
+
+base {
+    appearance "dark"
+    background #1E1E2E
+    separator #313244
+    text #CDD6F4
+}
+
+actionBar {
+    separator #45475A 
+
+    button {
+        background #1E1E2E
+        hotkey #CDD6F4
+        text #BAC2DE
+    }
+}
+
+asyncProgressBar {
+    border #7F849C
+    progress #BAC2DE
+    itemProgress #313244
+}
+
+breadcrumbs {
+    color1 #181825
+    color2 #313244
+    color3 #45475A
+    separator #74C7EC
+    text #CDD6F4
+}
+
+files {
+    background {
+        alternate #181825
+        current #585B70
+        currentSelected #74C7EC
+        selected #45475A
+    }
+
+    dragDropSelection {
+        color #6C7086
+        width 1
+    }
+
+    text {
+        current #CDD6F4
+        currentSelected #FAB387
+        hidden #45475A
+        matched #F38BA8
+        selected #FAB387
+
+        highlighting1 #94E2D5
+        highlighting2 #A6E3A1
+        highlighting3 #F5C2E7
+        highlighting4 #F9E2AF
+    }
+}
+
+searchBar {
+    query {
+        border #45475A
+        placeholder #94E2D5
+    }
+
+    results {
+        highlighting #CDD6F4
+        selection #74C7EC
+        subtitle #6C7086
+    }
+
+    rowSeparator {
+        color #45475A
+        show true
+    }
+}
+
+statusBar {
+    background #585B70
+    border #45475A
+    text #CDD6F4
+    quickSelectNoResultsHighlighting #F38BA8
+}
+
+tableHeader {
+    separator #45475A
+    text #CDD6F4
+
+    pressed {
+        background #45475A
+    }
+}
+
+tabs {
+    active {
+        text #CDD6F4
+    }
+
+    inactive {
+        background #181825
+        text #6C7086
+    }
+}
+
+terminal {
+    caret {
+        background #7F849C
+        text #CDD6F4
+    }
+}
+
+textEditor {
+    error #F38BA8
+    warning #CBA6F7
+    keyword #A6E3A1
+    comment #7F849C
+    identifier #CDD6F4
+
+    literal {
+        string #A6E3A1
+        number #89B4FA
+        color #89B4FA
+    }
+
+    gutter {
+        background #585B70
+        text #A6ADC8
+    }
+}
+
+titleBar {
+    text #CDD6F4
+}

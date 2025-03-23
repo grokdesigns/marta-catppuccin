@@ -1,0 +1,134 @@
+name "Catppuccin - macchiato"
+
+base {
+    appearance "dark"
+    background #24273A
+    separator #363A4F
+    text #CAD3F5
+}
+
+actionBar {
+    separator #494D64 
+
+    button {
+        background #24273A
+        hotkey #CAD3F5
+        text #B8C0E0
+    }
+}
+
+asyncProgressBar {
+    border #8087A2
+    progress #B8C0E0
+    itemProgress #363A4F
+}
+
+breadcrumbs {
+    color1 #1E2030
+    color2 #363A4F
+    color3 #494D64
+    separator #7DC4E4
+    text #CAD3F5
+}
+
+files {
+    background {
+        alternate #1E2030
+        current #5B6078
+        currentSelected #7DC4E4
+        selected #494D64
+    }
+
+    dragDropSelection {
+        color #6E738D
+        width 1
+    }
+
+    text {
+        current #CAD3F5
+        currentSelected #F5A97F
+        hidden #494D64
+        matched #ED8796
+        selected #F5A97F
+
+        highlighting1 #8BD5CA
+        highlighting2 #A6DA95
+        highlighting3 #F5BDE6
+        highlighting4 #EED49F
+    }
+}
+
+searchBar {
+    query {
+        border #494D64
+        placeholder #8BD5CA
+    }
+
+    results {
+        highlighting #CAD3F5
+        selection #7DC4E4
+        subtitle #6E738D
+    }
+
+    rowSeparator {
+        color #494D64
+        show true
+    }
+}
+
+statusBar {
+    background #5B6078
+    border #494D64
+    text #CAD3F5
+    quickSelectNoResultsHighlighting #ED8796
+}
+
+tableHeader {
+    separator #494D64
+    text #CAD3F5
+
+    pressed {
+        background #494D64
+    }
+}
+
+tabs {
+    active {
+        text #CAD3F5
+    }
+
+    inactive {
+        background #1E2030
+        text #6E738D
+    }
+}
+
+terminal {
+    caret {
+        background #8087A2
+        text #CAD3F5
+    }
+}
+
+textEditor {
+    error #ED8796
+    warning #C6A0F6
+    keyword #A6DA95
+    comment #8087A2
+    identifier #CAD3F5
+
+    literal {
+        string #A6DA95
+        number #8AADF4
+        color #8AADF4
+    }
+
+    gutter {
+        background #5B6078
+        text #A5ADCB
+    }
+}
+
+titleBar {
+    text #CAD3F5
+}

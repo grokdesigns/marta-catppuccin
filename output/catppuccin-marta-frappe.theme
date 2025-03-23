@@ -1,0 +1,134 @@
+name "Catppuccin - frappe"
+
+base {
+    appearance "dark"
+    background #303446
+    separator #414559
+    text #C6D0F5
+}
+
+actionBar {
+    separator #51576D 
+
+    button {
+        background #303446
+        hotkey #C6D0F5
+        text #B5BFE2
+    }
+}
+
+asyncProgressBar {
+    border #838BA7
+    progress #B5BFE2
+    itemProgress #414559
+}
+
+breadcrumbs {
+    color1 #292C3C
+    color2 #414559
+    color3 #51576D
+    separator #85C1DC
+    text #C6D0F5
+}
+
+files {
+    background {
+        alternate #292C3C
+        current #626880
+        currentSelected #85C1DC
+        selected #51576D
+    }
+
+    dragDropSelection {
+        color #737994
+        width 1
+    }
+
+    text {
+        current #C6D0F5
+        currentSelected #EF9F76
+        hidden #51576D
+        matched #E78284
+        selected #EF9F76
+
+        highlighting1 #81C8BE
+        highlighting2 #A6D189
+        highlighting3 #F4B8E4
+        highlighting4 #E5C890
+    }
+}
+
+searchBar {
+    query {
+        border #51576D
+        placeholder #81C8BE
+    }
+
+    results {
+        highlighting #C6D0F5
+        selection #85C1DC
+        subtitle #737994
+    }
+
+    rowSeparator {
+        color #51576D
+        show true
+    }
+}
+
+statusBar {
+    background #626880
+    border #51576D
+    text #C6D0F5
+    quickSelectNoResultsHighlighting #E78284
+}
+
+tableHeader {
+    separator #51576D
+    text #C6D0F5
+
+    pressed {
+        background #51576D
+    }
+}
+
+tabs {
+    active {
+        text #C6D0F5
+    }
+
+    inactive {
+        background #292C3C
+        text #737994
+    }
+}
+
+terminal {
+    caret {
+        background #838BA7
+        text #C6D0F5
+    }
+}
+
+textEditor {
+    error #E78284
+    warning #CA9EE6
+    keyword #A6D189
+    comment #838BA7
+    identifier #C6D0F5
+
+    literal {
+        string #A6D189
+        number #8CAAEE
+        color #8CAAEE
+    }
+
+    gutter {
+        background #626880
+        text #A5ADCE
+    }
+}
+
+titleBar {
+    text #C6D0F5
+}

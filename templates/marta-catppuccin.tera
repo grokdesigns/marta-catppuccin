@@ -1,0 +1,145 @@
+---
+whiskers:
+  version: 2.5.1
+  matrix:
+    - variant: ["generated-themes"]
+    - flavor
+  filename: "catppuccin-marta-{{flavor.identifier}}.theme"
+---
+
+{%- set palette = flavor.colors -%}
+
+name "Catppuccin - {{flavor.identifier}}"
+
+base {
+    appearance "{% if flavor.identifier=='latte'%}light{% else %}dark{% endif %}"
+    background #{{ palette.base.hex | upper }}
+    separator #{{ palette.surface0.hex | upper }}
+    text #{{ palette.text.hex | upper }}
+}
+
+actionBar {
+    separator #{{ palette.surface1.hex | upper }} 
+
+    button {
+        background #{{ palette.base.hex | upper }}
+        hotkey #{{ palette.text.hex | upper }}
+        text #{{ palette.subtext1.hex | upper }}
+    }
+}
+
+asyncProgressBar {
+    border #{{ palette.overlay1.hex | upper }}
+    progress #{{ palette.subtext1.hex | upper }}
+    itemProgress #{{ palette.surface0.hex | upper }}
+}
+
+breadcrumbs {
+    color1 #{{ palette.mantle.hex | upper }}
+    color2 #{{ palette.surface0.hex | upper }}
+    color3 #{{ palette.surface1.hex | upper }}
+    separator #{{ palette.sapphire.hex | upper }}
+    text #{{ palette.text.hex | upper }}
+}
+
+files {
+    background {
+        alternate #{{ palette.mantle.hex | upper }}
+        current #{{ palette.surface2.hex | upper }}
+        currentSelected #{{ palette.sapphire.hex | upper }}
+        selected #{{ palette.surface1.hex | upper }}
+    }
+
+    dragDropSelection {
+        color #{{ palette.overlay0.hex | upper }}
+        width 1
+    }
+
+    text {
+        current #{{ palette.text.hex | upper }}
+        currentSelected #{{ palette.peach.hex | upper }}
+        hidden #{{ palette.surface1.hex | upper }}
+        matched #{{ palette.red.hex | upper }}
+        selected #{{ palette.peach.hex | upper }}
+
+        highlighting1 #{{ palette.teal.hex | upper }}
+        highlighting2 #{{ palette.green.hex | upper }}
+        highlighting3 #{{ palette.pink.hex | upper }}
+        highlighting4 #{{ palette.yellow.hex | upper }}
+    }
+}
+
+searchBar {
+    query {
+        border #{{ palette.surface1.hex | upper }}
+        placeholder #{{ palette.teal.hex | upper }}
+    }
+
+    results {
+        highlighting #{{ palette.text.hex | upper }}
+        selection #{{ palette.sapphire.hex | upper }}
+        subtitle #{{ palette.overlay0.hex | upper }}
+    }
+
+    rowSeparator {
+        color #{{ palette.surface1.hex | upper }}
+        show true
+    }
+}
+
+statusBar {
+    background #{{ palette.surface2.hex | upper }}
+    border #{{ palette.surface1.hex | upper }}
+    text #{{ palette.text.hex | upper }}
+    quickSelectNoResultsHighlighting #{{ palette.red.hex | upper }}
+}
+
+tableHeader {
+    separator #{{ palette.surface1.hex | upper }}
+    text #{{ palette.text.hex | upper }}
+
+    pressed {
+        background #{{ palette.surface1.hex | upper }}
+    }
+}
+
+tabs {
+    active {
+        text #{{ palette.text.hex | upper }}
+    }
+
+    inactive {
+        background #{{ palette.mantle.hex | upper }}
+        text #{{ palette.overlay0.hex | upper }}
+    }
+}
+
+terminal {
+    caret {
+        background #{{ palette.overlay1.hex | upper }}
+        text #{{ palette.text.hex | upper }}
+    }
+}
+
+textEditor {
+    error #{{ palette.red.hex | upper }}
+    warning #{{ palette.mauve.hex | upper }}
+    keyword #{{ palette.green.hex | upper }}
+    comment #{{ palette.overlay1.hex | upper }}
+    identifier #{{ palette.text.hex | upper }}
+
+    literal {
+        string #{{ palette.green.hex | upper }}
+        number #{{ palette.blue.hex | upper }}
+        color #{{ palette.blue.hex | upper }}
+    }
+
+    gutter {
+        background #{{ palette.surface2.hex | upper }}
+        text #{{ palette.subtext0.hex | upper }}
+    }
+}
+
+titleBar {
+    text #{{ palette.text.hex | upper }}
+}
