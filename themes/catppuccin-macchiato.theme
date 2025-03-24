@@ -1,5 +1,4 @@
-
-name "Catppuccin - macchiato"
+name "Catppuccin - Macchiato"
 
 base {
     appearance "dark"

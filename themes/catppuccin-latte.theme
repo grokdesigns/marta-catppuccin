@@ -1,5 +1,4 @@
-
-name "Catppuccin - latte"
+name "Catppuccin - Latte"
 
 base {
     appearance "light"

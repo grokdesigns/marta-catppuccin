@@ -1,0 +1,142 @@
+---
+whiskers:
+  version: 2.5.1
+  matrix:
+    - flavor
+  filename: "themes/catppuccin-{{flavor.identifier}}.theme"
+  hex_format: "#{{R}}{{G}}{{B}}{{Z}}"
+---
+name "Catppuccin - {{flavor.name}}"
+
+base {
+    appearance "{% if flavor.light==true %}light{% else %}dark{% endif %}"
+    background {{ base.hex }}
+    separator {{ surface0.hex }}
+    text {{ text.hex }}
+}
+
+actionBar {
+    separator {{ surface1.hex }} 
+
+    button {
+        background {{ base.hex }}
+        hotkey {{ text.hex }}
+        text {{ subtext1.hex }}
+    }
+}
+
+asyncProgressBar {
+    border {{ overlay1.hex }}
+    progress {{ subtext1.hex }}
+    itemProgress {{ surface0.hex }}
+}
+
+breadcrumbs {
+    color1 {{ mantle.hex }}
+    color2 {{ surface0.hex }}
+    color3 {{ surface1.hex }}
+    separator {{ sapphire.hex }}
+    text {{ text.hex }}
+}
+
+files {
+    background {
+        alternate {{ mantle.hex }}
+        current {{ surface2.hex }}
+        currentSelected {{ sapphire.hex }}
+        selected {{ surface1.hex }}
+    }
+
+    dragDropSelection {
+        color {{ overlay0.hex }}
+        width 1
+    }
+
+    text {
+        current {{ text.hex }}
+        currentSelected {{ peach.hex }}
+        hidden {{ surface1.hex }}
+        matched {{ red.hex }}
+        selected {{ peach.hex }}
+
+        highlighting1 {{ teal.hex }}
+        highlighting2 {{ green.hex }}
+        highlighting3 {{ pink.hex }}
+        highlighting4 {{ yellow.hex }}
+    }
+}
+
+searchBar {
+    query {
+        border {{ surface1.hex }}
+        placeholder {{ teal.hex }}
+    }
+
+    results {
+        highlighting {{ text.hex }}
+        selection {{ sapphire.hex }}
+        subtitle {{ overlay0.hex }}
+    }
+
+    rowSeparator {
+        color {{ surface1.hex }}
+        show true
+    }
+}
+
+statusBar {
+    background {{ surface2.hex }}
+    border {{ surface1.hex }}
+    text {{ text.hex }}
+    quickSelectNoResultsHighlighting {{ red.hex }}
+}
+
+tableHeader {
+    separator {{ surface1.hex }}
+    text {{ text.hex }}
+
+    pressed {
+        background {{ surface1.hex }}
+    }
+}
+
+tabs {
+    active {
+        text {{ text.hex }}
+    }
+
+    inactive {
+        background {{ mantle.hex }}
+        text {{ overlay0.hex }}
+    }
+}
+
+terminal {
+    caret {
+        background {{ overlay1.hex }}
+        text {{ text.hex }}
+    }
+}
+
+textEditor {
+    error {{ red.hex }}
+    warning {{ mauve.hex }}
+    keyword {{ green.hex }}
+    comment {{ overlay1.hex }}
+    identifier {{ text.hex }}
+
+    literal {
+        string {{ green.hex }}
+        number {{ blue.hex }}
+        color {{ blue.hex }}
+    }
+
+    gutter {
+        background {{ surface2.hex }}
+        text {{ subtext0.hex }}
+    }
+}
+
+titleBar {
+    text {{ text.hex }}
+}
