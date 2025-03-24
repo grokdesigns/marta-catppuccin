@@ -6,10 +6,10 @@ whiskers:
   filename: "themes/catppuccin-{{flavor.identifier}}.theme"
   hex_format: "#{{R}}{{G}}{{B}}{{Z}}"
 ---
-name "Catppuccin - {{flavor.name}}"
+name "Catppuccin {{flavor.name}}"
 
 base {
-    appearance "{% if flavor.light==true %}light{% else %}dark{% endif %}"
+    appearance "{% if flavor.light %}light{% else %}dark{% endif %}"
     background {{ base.hex }}
     separator {{ surface0.hex }}
     text {{ text.hex }}
